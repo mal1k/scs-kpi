@@ -4066,3 +4066,7 @@ p > video {
 	background-color: rgb(22, 33, 36);
 	margin-bottom: 50px;
 }
+
+.main-navigation ul ul a {
+	color: black;
+}
