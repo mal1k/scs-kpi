@@ -1,19 +1,13 @@
 /*
-Theme Name: Twenty Sixteen
-Theme URI: https://wordpress.org/themes/twentysixteen/
-Author: the WordPress team
+Theme Name: SCS KPI
+Theme URI: https://t.me/person_z
+Author: Alex-K
 Author URI: https://wordpress.org/
-Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
-Version: 2.4
-Requires at least: 4.4
-Requires PHP: 5.2.4
+Version: 99.99
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog, block-patterns
-Text Domain: twentysixteen
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+Text Domain: exception
 */
 
 
@@ -50,14 +44,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
  *    14.4 - >= 985px
  *    14.5 - >= 1200px
  * 15.0 - Print
- */
-
-
-/**
- * 1.0 - Normalize
- *
- * Normalizing styles have been helped along thanks to the fine work of
- * Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
  */
 
 html {
@@ -822,7 +808,7 @@ a:active {
 }
 
 .main-navigation a {
-	color: #1a1a1a;
+	color: white;
 	display: block;
 	line-height: 1.3125;
 	outline-offset: -1px;
@@ -1614,7 +1600,10 @@ blockquote:after,
 }
 
 .custom-logo {
-	max-width: 180px;
+	max-width: 100px !important;
+		position: absolute;
+		top: 0;
+		    left: -20px;
 }
 
 .site-title {
@@ -2768,23 +2757,61 @@ p > video {
 	width: device-width;
 }
 
+#sp-logo {
+    position: relative;
+    color: #fff!important;
+}
+.lt-logo, .tp-caption a.btn-slider {
+    background: #4943ac;
+}
+.lt-logo {
+    height: 100px;
+}
+
+#sp-logo::before {
+    background: #0c1f38;
+    content: "";
+    height: 100px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 60%;
+	margin-left: -660px;
+    transform: skewX( 
+	-30deg
+	);
+    -webkit-transform: skewX( 
+	-30deg
+	);
+}
+
+.sp-contact-info {
+	list-style: none;
+    text-align: right;
+    padding: 30px 60px 30px 0;
+    font-size: 25px;
+    margin-left: 100px;
+}
+
+.headerSiteName {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    margin: auto 0px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-pad {
+	padding: 0 0 0 4.5455%;
+}
+
 
 /**
  * 14.1 - >= 710px
  */
 
 @media screen and (min-width: 44.375em) {
-	body:not(.custom-background-image):before,
-	body:not(.custom-background-image):after {
-		background: inherit;
-		content: "";
-		display: block;
-		height: 21px;
-		left: 0;
-		position: fixed;
-		width: 100%;
-		z-index: 99;
-	}
 
 	body:not(.custom-background-image):before {
 		top: 0;
@@ -2796,10 +2823,6 @@ p > video {
 
 	body:not(.custom-background-image):after {
 		bottom: 0;
-	}
-
-	.site {
-		margin: 21px;
 	}
 
 	.site-main {
@@ -2816,7 +2839,10 @@ p > video {
 	}
 
 	.custom-logo {
-		max-width: 210px;
+		max-width: 100px !important;
+		position: absolute;
+		top: 0;
+		left: -20px;
 	}
 
 	.site-title {
@@ -3461,7 +3487,10 @@ p > video {
 	}
 
 	.custom-logo {
-		max-width: 240px;
+		max-width: 100px !important;
+		position: absolute;
+		top: 0;
+		left: -20px;
 	}
 
 	.image-navigation {
@@ -4024,4 +4053,16 @@ p > video {
 	.widecolumn {
 		padding: 0;
 	}
+}
+
+#masthead {
+	padding: 0 4.5455% !important;
+    position: relative !important;
+}
+
+.header-all-page {
+	text-align: center;
+	display: flex;
+	background-color: rgb(22, 33, 36);
+	margin-bottom: 50px;
 }
