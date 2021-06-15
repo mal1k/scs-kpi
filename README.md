@@ -4,4 +4,4 @@ You need to clear <b>wp-content</b> folder and insert everything from the git th
 <h2>Previous Database:</h2>
 path: themes/twentysixteen/
 <h2>Latest Database:</h2>
-<p>path: ./wpscs23-05 (7).sql</p>
+<p>path: ./latest_db.sql</p>
